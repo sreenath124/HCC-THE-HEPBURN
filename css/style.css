@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    margin: 0;
+}
+
+a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+@font-face {
+    font-family: TheanoDidot;
+    src: url('../assets/font/TheanoDidot-Regular.ttf');
+}
+
+header {
+    background-color: #000;
+    height: 60px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+}
+
+h1 {
+    color: #ffffff;
+    font: 400 25px/60px "TheanoDidot";
+    float: left;
+    margin: 0;
+}
+
+h2 {
+    font: 800 50px "Helvetica";
+}
+
+h3 {
+    font: 400 18px "TheanoDidot";
+    text-transform: uppercase;
+}
+
+h4 {
+    font: 400 14px "TheanoDidot";
+    text-transform: uppercase;
+}
+
+.logo {
+    float: left;
+}
+
+#slider {
+    height: 100vh;
+}
+.nav_bar{
+	width: 100%;
+	background: rgba(128, 128, 128, 1);
+	position: absolute;
+	top: 60px;
+	overflow:  hidden;
+	height: 0;
+	transition: height 0.5s ease;
+}
+.nav_bar_expand {
+	height: 250px;
+}
+.nav_bar li {
+	padding: 20px 0;
+	font: 400 25px "TheanoDidot";
+	text-transform: uppercase;
+}
+.carousel,
+.carousel-inner,
+.item {
+    height: 100%;
+}
+
+.container {
+    height: 100%;
+    padding: 0;
+}
+
+.carousel-control {
+    background: none;
+    background-image: none;
+}
+
+.menu_btn {
+    width: 32px;
+    height: 20px;
+    position: relative;
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    display: inline-block;
+    float: left;
+    margin: 18px 20px;
+    cursor: pointer;
+}
+
+.menu_btn::before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 0;
+    width: 100%;
+    border-top: 3px solid #fff;
+}
+
+main {
+    background-color: #000;
+    position: relative;
+}
+
+.home {
+    height: calc(100vh - 60px);
+    width: 100%;
+    text-align: center;
+    display: table;
+}
+
+.home img {
+    min-width: 200px;
+}
+
+.home_inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.menus {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: table;
+}
+
+.menus_list {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.menus li {
+    padding: 10px 0;
+    width: 60%;
+    margin: 0 auto;
+    font: 400 22px "TheanoDidot";
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.menus li:not(:last-child) {
+    border-bottom: 1px solid rgba(250, 250, 250, .3);
+}
+
+.residences {
+    padding: 20px;
+    height: 100vh;
+}
+
+.residences li {
+    padding: 20px 0;
+    font-family: "TheanoDidot";
+}
+
+.residences li:not(:last-child) {
+    border-bottom: 1px solid rgba(250, 250, 250, 0.5);
+}
+.residences p {
+	font-size: 18px;
+}
+
+.panorama {
+    height: 500px;
+    overflow: hidden;
+}
+
+.contact {
+    padding: 20px;
+    height: 100vh;
+}
+
+.contact p {
+    font: 16px "Helvetica";
+    margin: 10px 0;
+}
+
+.contact_input {
+    background-color: transparent;
+    border: none;
+    display: block;
+    margin: 15px 0;
+    padding: 10px 0;
+    width: 100%;
+    outline: none;
+    border-bottom: 1px solid rgba(250, 250, 250, 0.3);
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.input_radio {
+    position: relative;
+    margin-right: 40px;
+}
+
+.input_radio::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 50px;
+    background-color: transparent;
+    width: 12px;
+    height: 12px;
+    border: 1px solid rgba(250, 250, 250, 1);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.submit {
+    display: block;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    padding: 5px;
+    margin: 20px 0;
+    font: 800 16px "Helvetica";
+}
+
+address a,
+address p {
+    display: block;
+}
+.location {
+	width: 10px;
+	display: inline-block;
+}
+@media screen and (min-width: 768px) {
+    .container {
+        width: 100%;
+    }
+    .home img {
+        min-width: 300px;
+    }
+    .menus {
+        background: url('../assets/menu_list_bg.png') no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .residences,
+    .contact {
+        width: 60%;
+        margin: 0 auto;
+    }
+    .contact form p {
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .panorama_slide {
+        display: none;
+    }
+    h1{
+    	font-size: 32px;
+    }
+    h3{
+    	font-size: 25px;
+    }
+    .menus li {
+    	font:800 45px "TheanoDidot";
+    }
+}
