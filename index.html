@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="css/paver.css">
     <link rel="stylesheet" href="css/style.css">
     <title>HCC - The HEPBURN</title>
+
 </head>
 
 <body>
@@ -16,7 +17,7 @@
             <a href="" class="logo">
                 <h1>THE HEPBURN</h1>
             </a>
-            <nav class="nav_bar">
+            <nav id="nav_bar" class="nav_bar">
                 <ul>
                     <li>
                         <a href=""  data-jumpto="residences" class="nav_links">Residencies</a>
@@ -59,10 +60,10 @@
                             <div class="item active">
                                 <section class="home">
                                     <div class="home_inner">
-                                        <a href="">
+                                        <a href="" class="hcc_logo" >
                                             <h2>
-						<img src="assets/hcc_logo.svg" alt="hcc_logo">
-					</h2>
+												<img src="assets/hcc_logo.svg" alt="hcc_logo">
+											</h2>
                                         </a>
                                     </div>
                                 </section>
@@ -108,12 +109,13 @@
                 <form action="">
                     <input type="text" placeholder="Name:" class="contact_input">
                     <input type="text" placeholder="E-mail:" class="contact_input">
-                    <input type="text" placeholder="phone:" class="contact_input">
+                    <input type="text" placeholder="Phone:" class="contact_input">
                     <p>Preferred method of contact:</p>
+                    <input type="radio" id="email" name="prefered_contact" checked>
                     <label for="email" class="input_radio">Email </label>
-                    <input type="radio" id="email">
+                    <input type="radio" id="phone" name="prefered_contact">
                     <label for="phone" class="input_radio">Phone</label>
-                    <input type="radio" id="phone">
+                    
                     <button class="submit">SUBMIT</button>
                     <address>
                         <span>Coming summer 2016</span>
@@ -126,16 +128,33 @@
                             <img class="location" src="assets/location.svg" alt="location">
                         </a>
                     </address>
+                    <div class="partners_logo">
+                    	<div class="enterprises">
+                    	<img src="assets/lowe.svg" alt="lowe enterprises" class="lowe">
+                    	<img src="assets/nrea.png" alt="nrea" class="nrea">
+                    </div>
+                    <div class="icons">
+                    	<img src="assets/bozzuto_logo.png" alt="bozzuto" class="bozzuto">
+                    	<img src="assets/house.png" alt="home_icon">
+                    	<img src="assets/wheel_chair.png" alt="wheel_chair" class="wheelchair">
+                    </div>
+                    </div>
                 </form>
             </section>
+            	
         </main>
         <footer></footer>
     </section>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/jquery.paver.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
+   
+    <script  src="js/jquery.paver.js"></script>
+	
+    <script  src="js/script.js"></script>
+   
+
+    
 </body>
 
 </html>
